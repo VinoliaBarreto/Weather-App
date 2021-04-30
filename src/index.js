@@ -1,3 +1,4 @@
+//import "src/styles.css";
 // Use this function to see the data and time in your app
 let now = new Date();
 function checkWeek(date) {

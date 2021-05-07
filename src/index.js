@@ -33,25 +33,30 @@ function insertCity(event) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=${apiKey}&units=${units}`;
   actualCity.innerHTML = input.value;
 
-  axios.get(apiUrl).then(showTemp);
-  axios.get(apiUrl).then(showHumi);
-  axios.get(apiUrl).then(showWind);
+  axios.get(apiUrl).then(showEvent);
 }
 let form = document.querySelector("form");
 form.addEventListener("submit", insertCity);
 
-function showTemp(response) {
+function showEvent(response) {
+  console.log(response);
+  let descriptionWeather = response.data.weather[0].description;
+  let description = document.querySelector("#description");
+  let iconWeather = response.data.weather[0].icon;
+  let icon = document.querySelector("#icon");
   let celcius = Math.round(response.data.main.temp);
   let temp = document.querySelector("#degree");
-  temp.innerHTML = `Temperature: ${celcius}ºC`;
-}
-function showHumi(response) {
   let humidi = response.data.main.humidity;
   let humi = document.querySelector("#humid");
-  humi.innerHTML = `Humidity: ${humidi}%`;
-}
-function showWind(response) {
   let windy = Math.round(response.data.wind.speed);
   let win = document.querySelector("#theWind");
+
+  description.innerHTML = `${descriptionWeather}`;
+  icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${iconWeather}@2x.png`
+  );
+  temp.innerHTML = `Temperature: ${celcius}ºC`;
+  humi.innerHTML = `Humidity: ${humidi}%`;
   win.innerHTML = `Wind: ${windy} Km/h`;
 }

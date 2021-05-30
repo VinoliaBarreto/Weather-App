@@ -1,5 +1,6 @@
 body {
   font-family: "Caveat", cursive;
+  font-family: "Signika", sans-serif;
 }
 .principal {
   background: #ecf0f1;
@@ -15,7 +16,7 @@ body {
   align-items: center;
 }
 .encabezado {
-  font-family: "Caveat", cursive;
+  font-family: "Signika", sans-serif;
   font-size: 45px;
   text-align: center;
   margin: 0 auto;
@@ -29,7 +30,7 @@ body {
 .resultado {
   background-color: transparent;
   align-items: center;
-  font-family: "Caveat", cursive;
+  font-family: "Signika", sans-serif;
   font-size: 25px;
   font-style: italic;
   font-weight: 700;
@@ -38,13 +39,13 @@ body {
   text-align: center;
   align-items: center;
   font-weight: bold;
-  font-family: "Caveat", cursive;
+  font-family: "Signika", sans-serif;
 }
 .foot {
   text-align: center;
   margin: 50px auto;
   background-color: transparent;
-  font-family: "Caveat", cursive;
+  font-family: "Signika", sans-serif;
   font-size: 20px;
   border-color: transparent;
 }
@@ -64,7 +65,7 @@ body {
   cursor: pointer;
 }
 .forecast5 {
-  font-family: "Caveat", cursive;
+  font-family: "Signika", sans-serif;
   font-size: 25px;
   font-weight: normal;
   margin-top: 40px;

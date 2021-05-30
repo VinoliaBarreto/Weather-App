@@ -61,6 +61,7 @@ body {
   cursor: pointer;
 }
 .forecast5 {
+  font-family: "Caveat", cursive;
   margin-top: 40px;
   text-align: center;
   color: #000;

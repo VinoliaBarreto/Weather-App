@@ -38,9 +38,17 @@ function insertCity(event) {
 let form = document.querySelector("form");
 form.addEventListener("submit", insertCity);
 
+function formatDay(times) {
+  let date = new Date(times * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
+
 function displayForecast(response) {
   let forecast = response.data.daily;
-  let forecastElem = document.querySelector("#forecast");
+  let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
     if (index < 6) {

@@ -58,3 +58,8 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+.forecast5 {
+  margin-top: 20px;
+  text-align: center;
+  color: #000;
+}

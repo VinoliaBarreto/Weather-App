@@ -1,5 +1,5 @@
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Caveat", cursive;
 }
 .principal {
   background: #ecf0f1;
@@ -16,7 +16,7 @@ body {
 }
 .encabezado {
   font-family: "Caveat", cursive;
-  font-size: 50px;
+  font-size: 45px;
   text-align: center;
   margin: 0 auto;
 }
@@ -30,7 +30,7 @@ body {
   background-color: transparent;
   align-items: center;
   font-family: "Caveat", cursive;
-  font-size: 18px;
+  font-size: 25px;
   font-style: italic;
   font-weight: 700;
 }
@@ -45,7 +45,7 @@ body {
   margin: 50px auto;
   background-color: transparent;
   font-family: "Caveat", cursive;
-  font-size: 10px;
+  font-size: 20px;
   border-color: transparent;
 }
 .listado {
@@ -65,7 +65,7 @@ body {
 }
 .forecast5 {
   font-family: "Caveat", cursive;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   margin-top: 40px;
   text-align: center;

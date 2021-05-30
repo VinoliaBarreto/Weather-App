@@ -15,7 +15,7 @@ body {
   align-items: center;
 }
 .encabezado {
-  font-style: italic;
+  font-family: "Caveat", cursive;
   font-size: 60px;
   text-align: center;
   margin: 0 auto;

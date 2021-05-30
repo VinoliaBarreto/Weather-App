@@ -29,6 +29,7 @@ body {
 .resultado {
   background-color: transparent;
   align-items: center;
+  font-family: "Caveat", cursive;
   font-size: 18px;
   font-style: italic;
   font-weight: 700;
@@ -37,11 +38,13 @@ body {
   text-align: center;
   align-items: center;
   font-weight: bold;
+  font-family: "Caveat", cursive;
 }
 .foot {
   text-align: center;
   margin: 50px auto;
   background-color: transparent;
+  font-family: "Caveat", cursive;
   font-size: 10px;
   border-color: transparent;
 }

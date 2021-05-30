@@ -38,7 +38,7 @@ function insertCity(event) {
 let form = document.querySelector("form");
 form.addEventListener("submit", insertCity);
 
-function forcastDay(times) {
+function forecastDay(times) {
   let date = new Date(times * 1000);
   let day = date.getDay();
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
